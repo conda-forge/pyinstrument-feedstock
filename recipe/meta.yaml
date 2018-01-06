@@ -20,6 +20,7 @@ build:
 
   number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
+  noarch: python
 
 requirements:
   build:
@@ -43,6 +44,7 @@ about:
   license_family: BSD
   summary: "A call stack profiler for Python. Inspired by Apple's Instruments.app"
   dev_url: https://github.com/joerick/pyinstrument
+  doc_url: https://github.com/joerick/pyinstrument
 
 extra:
   recipe-maintainers:
