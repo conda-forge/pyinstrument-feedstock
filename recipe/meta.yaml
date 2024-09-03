@@ -17,7 +17,7 @@ build:
   entry_points:
     - pyinstrument = pyinstrument.__main__:main
 
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -29,6 +29,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
   run:
     - python
 
