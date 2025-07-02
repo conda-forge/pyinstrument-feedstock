@@ -1,16 +1,13 @@
 {% set name = "pyinstrument" %}
-{% set version = "5.0.2" %}
-{% set bundle = "tar.gz" %}
-{% set hash_val = "e466033ead16a48ffa8bedbd633b90d416fa772b3b22f61226882ace0371f5f3" %}
+{% set version = "5.0.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  sha256: {{ hash_val }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 88281dfe65e5d6b42035bba72808cbcd4cb46cd0a0ba35da23d3e74a41ebdd05
 
 build:
   skip: true  # [python_impl=='pypy']
