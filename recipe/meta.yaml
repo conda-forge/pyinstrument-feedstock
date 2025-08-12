@@ -1,5 +1,5 @@
 {% set name = "pyinstrument" %}
-{% set version = "5.1.0" %}
+{% set version = "5.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c79390a9a2ce6cbf9851eaebb3c2429765b1ac6c77742e62e22b6ade2989f266
+  sha256: bc401cda990b3c1cfe8e0e0473cbd605df3c63b73478a89ac4ab108f2184baa8
 
 build:
   skip: true  # [python_impl=='pypy']
