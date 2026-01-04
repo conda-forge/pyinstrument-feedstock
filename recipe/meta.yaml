@@ -1,5 +1,5 @@
 {% set name = "pyinstrument" %}
-{% set version = "5.1.1" %}
+{% set version = "5.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bc401cda990b3c1cfe8e0e0473cbd605df3c63b73478a89ac4ab108f2184baa8
+  sha256: af149d672da9493fa37334a1cc68f7b80c3e6cb9fd99b9e426c447db5c650bf0
 
 build:
   skip: true  # [python_impl=='pypy']
   entry_points:
     - pyinstrument = pyinstrument.__main__:main
 
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
